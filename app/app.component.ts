@@ -20,8 +20,10 @@ export class AppComponent {
   public kegs: Keg[];
   constructor(){
     this.kegs = [
-      new Keg("Rainier", "Rainier", 3, 4.7, 124, 0),
-      new Keg("Apocolyspe IPA", "10 Barrel", 5, 6.7, 124, 1)
+      new Keg("Rainier", "Rainier", 2.50, 4.7, 0),
+      new Keg("Apocolyspe IPA", "10 Barrel", 5, 6.7, 1),
+      new Keg("Four", "Upright", 5, 6.2, 2),
+      new Keg("Tecate", "Tecate", 3, 4.3, 3)
     ];
   }
   kegWasSelected(clickedKeg: Keg): void {

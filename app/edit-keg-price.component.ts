@@ -5,7 +5,12 @@ import { Keg } from './keg.model';
   selector: 'edit-keg-price',
   inputs: ['keg'],
   template:`
-    <h3>Edit Price: {{ keg.price }}</h3>
+  <div class="keg-form">
+    <h3>Edit {{keg.beerName}}'s Price: Current Price: $\{{ keg.price }}</h3>
+    <div class="row">
+      <input [(ngModel)]="keg.price" class="col-sm-8 input-lg keg-form"/>
+    </div>
+  </div>
   `
 })
 
