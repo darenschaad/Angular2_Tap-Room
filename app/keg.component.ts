@@ -6,7 +6,7 @@ import { Keg } from './keg.model';
   selector: 'keg-display',
   inputs: ['keg'],
   template: `
-    <h3>{{keg.beerName}}</h3>
+    <h3>{{keg.beerName}} $\{{keg.price}}</h3>
   `
 })
 
