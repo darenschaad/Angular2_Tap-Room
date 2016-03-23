@@ -9,11 +9,11 @@ import { Keg } from './keg.model';
       <div class="row">
         <h3>Enter New Keg</h3>
         <input placeholder="Beer Name" class="col-sm-8 input-lg" #newName>
-        <input placeholder="Price" class="col-sm-8 input-lg" #newPrice>
-        <input placeholder="ABV%" class="col-sm-8 input-lg" #newABV>
-        <input placeholder="Brewery" class="col-sm-8 input-lg" #newBrewery>
+        <input placeholder="Price" class="col-sm-8 input-lg" required #newPrice>
+        <input placeholder="ABV%" class="col-sm-8 input-lg" required #newABV>
+        <input placeholder="Brewery" class="col-sm-8 input-lg" required #newBrewery>
       </div>
-      <button class="btn-lg btn-success"(click)="addKeg(newName, newPrice, newABV, newBrewery)">Add</button>
+      <button class="btn-lg btn-success add"(click)="addKeg(newName, newPrice, newABV, newBrewery)">Add</button>
     </div>
   `
 })

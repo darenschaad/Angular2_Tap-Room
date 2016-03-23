@@ -14,7 +14,12 @@ import { Keg } from './keg.model';
 export class KegComponent {
   public keg: Keg;
   beerSale(clickedKeg: Keg): void {
-    this.keg.pintCount = this.keg.pintCount-1 ;
+    if (this.keg.pintCount > 0){
+      this.keg.pintCount = this.keg.pintCount-1 ;
+    }
+    else {
+      alert("Not enough beer left restock keg");
+    }
 
   }
 }
